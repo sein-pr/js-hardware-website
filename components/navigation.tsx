@@ -17,7 +17,7 @@ const navLinks = [
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState(navLinks[0].href)
+  const [activeSection, setActiveSection] = useState<string | null>(null)
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -30,7 +30,7 @@ export function Navigation() {
       const scrollY = window.scrollY
       setScrolled(scrollY > 20)
 
-      let currentSection = navLinks[0].href
+      let currentSection: string | null = null
       for (const link of navLinks) {
         const section = document.querySelector(link.href) as HTMLElement | null
         if (!section) continue
@@ -87,6 +87,7 @@ export function Navigation() {
             href="#"
             onClick={(e) => {
               e.preventDefault()
+              setActiveSection(null)
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
             className="flex items-center gap-3 group"
