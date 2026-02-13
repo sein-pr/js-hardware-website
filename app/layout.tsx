@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "JS Hardware CC | Architectural Ironmongery & Security Solutions",
   description:
     "Namibia's leading specialist in architectural ironmongery, high-security access solutions, and professional hardware consultancy. Authorized Assa Abloy partner.",
+  icons: {
+    icon: "/images/js-hardware-logo.jpg",
+    shortcut: "/images/js-hardware-logo.jpg",
+    apple: "/images/js-hardware-logo.jpg",
+  },
   keywords: [
     "JS Hardware",
     "architectural ironmongery",
