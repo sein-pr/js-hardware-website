@@ -32,13 +32,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+264 (0) 61 238953",
-    detail: "+264 (0) 61 238380",
+    value: "061 238 380",
+    detail: "Office Line",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "jshardware@iway.na",
+    value: "bianca@jshardwarenamibia.com",
     detail: "Enquiries & Specifications",
   },
   {
